@@ -5,7 +5,7 @@ import rpn
 class TestBasics(unittest.TestCase):
     def test_add(self):
         result = rpn.calculate("1 1 +")
-        self.assertEqual(3, result)
+        self.assertEqual(2, result)
     def test_subtract(self):
         result = rpn.calculate("5 3 -")
         self.assertEqual(2, result)
@@ -18,3 +18,6 @@ class TestBasics(unittest.TestCase):
     def test_power(self):
         result = rpn.calculate("2 3 ^")
         self.assertEqual(8, result)
+
+#if __name__ == '__main__':
+#    unittest.main()
